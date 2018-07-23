@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
   # New Code!!
   before_create :some_method
 
-  # Difference between before_save and before_create is the latter gets called only when a 
+  # Difference between before_save and before_create is the latter gets called only when a new object is being created
 
 
   private
