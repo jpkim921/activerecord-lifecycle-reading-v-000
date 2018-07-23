@@ -6,6 +6,9 @@ class Post < ActiveRecord::Base
   # New Code!!
   before_validation :make_title_case 
   
+  # New Code!!
+  before_save :email_author_about_post
+
   
   # Here is a rule of thumb: Whenever you are modifying an attribute of the model, use before_validation. If you are doing some other action, then use before_save.
 
